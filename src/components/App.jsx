@@ -71,7 +71,7 @@ const App = () => {
 	}
 
 	return (
-		<div className="streaming-container">
+		<div className="streaming">
 			<div className="streaming__title">
 			<input onChange={(e) => {
 				e.preventDefault()
