@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+## Peer server
+
+In order to make this application working you need to run peer server, peer server you can install and run globally or you can use my project peer-server, install and start peer-server project and you're ready to go. Link to the peer-server is <https://github.com/sandra-frontend/peer-server>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -68,7 +72,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### Peer server
-
-In order to set up this application working you need to run peer server, peer server you can install and run globally or you can use my project peer-server, install and start peer-server project and you're ready to go. Link to the peer-server is <https://github.com/sandra-frontend/peer-server>
