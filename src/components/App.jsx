@@ -11,7 +11,7 @@ const App = () => {
 	const peerVideo = useRef();
 
 	useEffect(() => {
-		// Specify what is happening when peer is open:
+		// Specify what is happening when peer is open
 		peer.on('open', id => {
 			setPeerId(id);
 		});
@@ -71,17 +71,19 @@ const App = () => {
 	}
 
 	return (
-		<div className="App">
-			<video ref={coreVideo} id="video" width="500px" height="500px" autoPlay></video>
-			<video ref={peerVideo} id="local" width="200px" height="200px" autoPlay></video>
-			<div>
-				<h1>Peer ID: {peerId}</h1>
-			</div>
+		<div className="streaming-container">
+			<div className="streaming__title">
 			<input onChange={(e) => {
 				e.preventDefault()
 				setSecondId(e.target.value);
 			}} value={secondId}/>
-			<button onClick={onBtnClick}>Call</button>
+			<button className="streaming__button" onClick={onBtnClick}>Call</button>
+				<h1>Peer ID: {peerId}</h1>
+			</div>
+			<div className="streaming__videos">
+				<video ref={coreVideo} id="video" width="500px" height="500px" autoPlay></video>
+				<video ref={peerVideo} id="local" width="200px" height="200px" autoPlay></video>
+			</div>
 		</div>
 	);
 };
