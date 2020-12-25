@@ -6,7 +6,7 @@ const App = () => {
 	const [peerId, setPeerId] = useState("");
 	const [secondId, setSecondId] = useState("");
 
-	// Defining refs:
+	// Defining refs
 	const coreVideo = useRef();
 	const peerVideo = useRef();
 
